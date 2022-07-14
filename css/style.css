@@ -1,0 +1,268 @@
+* {
+  padding: 0;
+}
+
+#container {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  min-width: 650px;
+}
+
+#main {
+  background-image: linear-gradient(#0B5D83, #0C3962);
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#main #left {
+  width: 500px;
+}
+
+.bi {
+  color: white;
+}
+
+.border-circle {
+  box-shadow: 0 2px 0 rgb(0 0 0 / 45%), inset 0 0 0 2px hsl(0deg 0% 100% / 10%);
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+#main span {
+  height: fit-content;
+  width: fit-content;
+}
+
+.bi-list {
+  font-size: 11px;
+  line-height: 19px;
+  padding: 2px;
+  height: 23px;
+  width: 23px;
+  text-align: center;
+}
+
+.bi-x {
+  box-shadow: none;
+  border: none;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 24px;
+  padding: 0;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+#left-bottom {
+  margin: 0;
+}
+
+.icon_btmlft {
+  float: left;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.icon_btmlft1 {
+  float: left;
+  margin-top: -4px;
+  margin-right: 5px;
+}
+
+.icon_btmlft1 img {
+  background-color: #466585;
+  box-shadow: 0 2px 0 rgb(0 0 0 / 45%), inset 0 0 0 2px hsl(0deg 0% 100% / 10%);
+  padding: 5px;
+  line-height: 14px;
+  border-radius: 50%;
+  height: 35px;
+  border: 2px solid #40adb3;
+}
+
+.button_Sec {
+  min-width: 110px;
+  max-width: 150px !important;
+}
+
+.button_Sec .fa,
+.fa-solid,
+.fa-brands {
+  background-color: #466585;
+  box-shadow: 0 2px 0 rgb(0 0 0 / 45%), inset 0 0 0 2px hsl(0deg 0% 100% / 10%);
+  border-radius: 50%;
+  border: 2px solid #40adb3;
+  color: white;
+  height: 26px;
+  margin: auto;
+  line-height: 14px;
+  padding: 4px;
+  width: 26px;
+}
+
+.fa-user-group {
+  font-size: 11px;
+}
+
+.fa-hand {
+  font-size: 14px;
+}
+
+.fa-shirt {
+  font-size: 12px;
+}
+
+.fa-envelope {
+  font-size: 14px;
+}
+
+.fa-crow {
+  font-size: 12px;
+}
+
+.fa-solid.fa-cart-arrow-down {
+  background-color: #866f9b;
+  border-radius: 32px;
+  border: 2px solid #ccb9f0;
+  box-shadow: 0 2px 0 rgb(0 0 0 / 45%), inset 0 0 0 2px hsl(0deg 0% 100% / 10%);
+  color: white;
+  font-size: 20px;
+  height: 34px;
+  line-height: 25px;
+  padding-left: 3px;
+  width: 34px;
+}
+
+.bi.bi-nut-fill {
+  background-color: #544e7c;
+  border-radius: 50%;
+  border: 2px solid #a2a9dd;
+  box-shadow: 0 2px 0 rgb(0 0 0 / 45%), inset 0 0 0 2px hsl(0deg 0% 100% / 10%);
+  color: white;
+  font-size: 22px;
+  height: 34px;
+  line-height: 25px;
+  padding: 0 3px;
+  text-align: center;
+  width: 34px;
+}
+
+.coins-sec {
+  background-color: #0A3048;
+  border: 0;
+  border-radius: 50vh;
+  color: white;
+  font-size: 10px;
+  margin: 0px;
+  padding: 2px;
+}
+
+.coins-sec li {
+  list-style-type: none;
+}
+
+.coin-item img {
+  height: 15px;
+}
+
+#main-img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+#main-img img {
+  padding: 0px;
+}
+
+#center-bottom {
+  margin: 0;
+  padding: 10px 7px;
+  width: 100%;
+}
+
+#chatbox {
+  background-color: #8393CA;
+  border-radius: 7px;
+  height: 33px;
+  padding: 0;
+  width: 100%;
+}
+
+#chatbox #textbox {
+  background-color: white;
+  padding: 3px 5px;
+  width: 110%;
+}
+
+#chatbox #icon_sec {
+  padding: 2px 0;
+  width: 70px;
+  position: relative;
+  left: 5px;
+  z-index: 1;
+}
+
+#icon_sec #first {
+  padding: 0 5px 0 0;
+}
+
+.fa.fa-question {
+  color: white;
+  background-color: #cc0d50;
+  box-shadow: 0 2px 0 rgb(0 0 0 / 45%), inset 0 0 0 2px hsl(0deg 0% 100% / 10%);
+  height: 34px;
+  width: 34px;
+  line-height: 30px;
+  border-radius: 32px;
+  border: 2px solid #f4849c;
+  font-size: 22px;
+  text-align: center;
+}
+
+.fa-solid.fa-right-from-bracket {
+  color: white;
+  background-color: #cc0d50;
+  box-shadow: 0 2px 0 rgb(0 0 0 / 45%), inset 0 0 0 2px hsl(0deg 0% 100% / 10%);
+  height: 34px;
+  width: 34px;
+  line-height: 25px;
+  border-radius: 32px;
+  border: 2px solid #f4849c;
+  font-size: 22px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 670px) {
+  .icon_shping {
+    margin: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  #main {
+    margin: 0 !important;
+  }
+
+  #main #center {
+    width: 36.6% !important;
+  }
+
+  #main #right {
+    width: 30% !important;
+  }
+
+  #main #left {
+    width: 33.3% !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #main {
+    margin: 0 10% !important;
+  }
+}
