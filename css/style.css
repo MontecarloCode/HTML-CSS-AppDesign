@@ -108,7 +108,7 @@
   font-size: 11px;
 }
 
-i:hover {
+.button_Sec i:hover {
   background-color: #1D7275;
 }
 
@@ -128,7 +128,7 @@ i:hover {
   font-size: 12px;
 }
 
-.fa-solid.fa-cart-arrow-down {
+.fa-cart-arrow-down {
   background-color: #866f9b;
   border-radius: 32px;
   border: 2px solid #ccb9f0;
@@ -211,11 +211,38 @@ i:hover {
   z-index: 1;
 }
 
+#first .chatbox-icon {
+  background: white;
+  border: 2px solid #4C7196;
+  border-radius: 50%;
+  box-shadow: 0 2px 0 rgb(0 0 0 / 45%), inset 0 0 0 2px hsl(0deg 0% 100% / 10%);
+  color: #20A8E0;
+  font-size: 10px;
+  font-weight: 900;
+  height: 26px;
+  line-height: 12px;
+  padding: 4px 0 0 3px;
+  width: 26px;
+}
+
+#second .chatbox-icon {
+  background: white;
+  border: 2px solid #4C7196;
+  border-radius: 50%;
+  box-shadow: 0 2px 0 rgb(0 0 0 / 45%), inset 0 0 0 2px hsl(0deg 0% 100% / 10%);
+  color: black;
+  font-size: 10px;
+  font-weight: 900;
+  height: 26px;
+  line-height: 12px;
+  padding: 4px 0 0 3px;
+  width: 26px;
+}
 #icon_sec #first {
   padding: 0 5px 0 0;
 }
 
-.fa.fa-question {
+.fa-question {
   color: white;
   background-color: #cc0d50;
   box-shadow: 0 2px 0 rgb(0 0 0 / 45%), inset 0 0 0 2px hsl(0deg 0% 100% / 10%);
@@ -228,13 +255,13 @@ i:hover {
   text-align: center;
 }
 
-.fa-solid.fa-right-from-bracket {
+.fa-right-from-bracket {
   color: white;
   background-color: #cc0d50;
   box-shadow: 0 2px 0 rgb(0 0 0 / 45%), inset 0 0 0 2px hsl(0deg 0% 100% / 10%);
   height: 34px;
   width: 34px;
-  line-height: 25px;
+  line-height: 29px;
   border-radius: 32px;
   border: 2px solid #f4849c;
   font-size: 22px;
@@ -456,6 +483,7 @@ i:hover {
   height: 14px;
   line-height: 14px;
   width: 14px;
+  margin: 0 !important;
 }
 
 .progress {
@@ -536,4 +564,85 @@ i:hover {
   padding: 5px 2px 2px 3px;
   width: 24px;
   margin-right: 10px;
+}
+.actions-overlay {
+  height: 0;
+  overflow: hidden;
+  position: fixed;
+  bottom: 100px;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.actions-content {
+  overflow: hidden;
+  padding: 5px;
+}
+
+.actions-content p {
+  margin: 0;
+}
+
+.actions-content p a {
+  text-decoration: none;
+}
+
+.actions-content p a:hover {
+  color: white;
+}
+
+#hand-top {
+  position: relative;
+  left: 15px;
+  top: 13px;
+  z-index: -1;
+}
+
+#actions-main {
+  background-color: rgba(0, 0, 0, 0.9);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  color: white;
+  font-size: 8px;
+  height: 100%;
+  width: 60px;
+  z-index: 2;
+}
+
+#actions-title {
+  font-size: 10px !important;
+}
+
+.fa-play {
+  align-self: flex-end;
+  background: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  color: #4C7196 !important;
+  height: 10px !important;
+  line-height: 10px !important;
+  padding: 0 !important;
+  width: 10px !important;
+}
+
+.child-content {
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 3px;
+  color: #4C7196;
+  display: none;
+  font-size: 8px;
+  margin: 2px;
+  position: fixed;
+  width: 0;
+  z-index: -1;
+}
+
+#sign div p {
+  margin: 0;
+  padding: 1px 5px;
+}
+
+#sign div a {
+  text-decoration: none;
 }

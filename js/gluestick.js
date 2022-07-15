@@ -19,20 +19,29 @@
 //   }
 // }
 
+let show_actions = false;
+let show_sign = false;
 function getPropValue(ele, prop) {
   let x = document.getElementById(ele)[prop];
   return x;
 }
 
 function openOverlay(id) {
+  closeActions();
   let element = document.getElementById(id);
   let prop = "left";
   let start_point = "offsetLeft";
   let w = "25%";
 
-  if (id == "gary") {
+  if (id === "gary") {
     prop = "right";
     w = "20%";
+  }
+  if (id === "actions") {
+    prop = "bottom";
+    start_point = "offsetTop";
+    w = "50px";
+    h = "40vh";
   }
   start_location = getPropValue("main", start_point);
 
@@ -41,6 +50,61 @@ function openOverlay(id) {
 }
 
 function closeOverlay(id) {
-  console.log("close" + id);
   document.getElementById(id).style.width = "0%";
+}
+
+function toogle(id) {
+  if (show_actions == false) show_sign == false;
+  if (id == "actions") {
+    show_actions = !show_actions;
+  }
+  if (id == "sign") {
+    show_sign = !show_sign;
+  }
+  if (show_actions == true) openActions();
+  else closeActions(id);
+  if (show_sign == true) openSign();
+  else closeSign("sign");
+}
+
+function openActions() {
+  let prop = "bottom";
+  let h = "60vh";
+  let sh = screen.height;
+  let base_element = "hand-bottom";
+  let minus = getPropValue(base_element, "offsetHeight");
+  let start_top = getPropValue(base_element, "offsetTop");
+  let start_left = getPropValue(base_element, "offsetLeft");
+  start_location_y = start_top + minus / 2;
+
+  let element = document.getElementById("actions");
+  element.style[prop] = sh - start_location_y + "px";
+  element.style.left = start_left - 17 + "px";
+  element.style.height = h;
+}
+
+function closeActions() {
+  closeSign("sign");
+  show_sign = false;
+  document.getElementById("actions").style.height = 0;
+}
+
+function openSign() {
+  let prop = "left";
+  let h = "40vh";
+  let base_element = "actions";
+  let start_top = getPropValue(base_element, "offsetTop");
+  let start_left = getPropValue(base_element, "offsetLeft");
+  let element = document.getElementById("sign");
+
+  element.style[prop] = start_left + 60 + "px";
+  element.style.top = start_top + 55 + "px";
+  element.style.display = "block";
+  element.style.height = h;
+  element.style.width = "60px";
+}
+
+function closeSign() {
+  show_sign = false;
+  document.getElementById("sign").style.display = "none";
 }

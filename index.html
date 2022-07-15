@@ -65,11 +65,48 @@
               <div class="icon_btmlft" style="margin-left: 5px">
                 <a href=""><i class="fa-solid fa-user-group"></i></a>
               </div>
-              <div class="icon_btmlft1">
-                <a onclick=""><i class="fa-solid fa-hand"></i></a>
+              <!-- Actions Overlay Start-->
+              <!-- <div id="actions"> -->
+              <div id="actions" class="actions-overlay">
+                <div class="" id="hand-top">
+                  <a onclick="toogle('actions')"><i class="fa-solid fa-hand"></i></a>
+                </div>
+                <div id="actions-main" class="" >
+                  <div class="overlay-title" id="actions-title">ACTIONS</div>
+                  <div class="actions-content">
+                    <p><a href="javascript:void(0)">Idle</a></p>
+                    <p><a href="javascript:void(0)">Wave</a></p>
+                    <p><a href="javascript:void(0)">Laugh</a></p>
+                    <p><a href="javascript:void(0)">Sit</a></p>
+                    <p><a href="javascript:void(0)">Respect</a></p>
+                    <p><a href="javascript:void(0)">Blow Kiss</a></p>
+                    <p class="d-flex justify-content-end"><a class="col" id="sign_child" href="javascript:void(0)" onclick="toogle('sign')">Sign</a><i class="col-2 fa-solid fa-play" onclick="toogle('sign')"></i></p>
+                  </div>
+                </div>
+                <!-- Sign Overlay Start-->   
+                <div id="sign" class="child-content">
+                  <div>
+                    <p><a href="#">sdfsdf</a></p>
+                    <p><a href="#">2</a></p>
+                    <p><a href="#">3</a></p>
+                    <p><a href="#">4</a></p>
+                    <p><a href="#">5</a></p>
+                    <p><a href="#">6</a></p>
+                    <p><a href="#">7</a></p>
+                    <p><a href="#">8</a></p>
+                    <p><a href="#">9</a></p>
+                    <p><a href="#">10</a></p>
+                  </div>
+                </div>
+                <!-- Sign Overlay End-->
+              </div>
+              <!-- Actions Overlay End-->
+              
+              <div class="icon_btmlft1" id="hand-bottom" onclick="toogle('actions')">
+                <a href="javascript:void(0)"><i class="fa-solid fa-hand"></i></a>
               </div>
               <div class="icon_btmlft">
-                <a href=""><i class="fa-solid fa-shirt"></i></a>
+                <a href="javascript:void(0)"><i class="fa-solid fa-shirt"></i></a>
               </div>
               <div class="icon_btmlft">
                 <a href="javascript:void(0)" onclick="openOverlay('chatHistory')">
@@ -133,10 +170,10 @@
             <div class="d-flex center-bottom" id="chatbox">
               <div class="d-flex" id="icon_sec">
                 <div class="icon_btmlft2" id="first">
-                  <a href=""><i class="fa-solid fa-shirt"></i></a>
+                  <div class="chatbox-icon">nps</div>
                 </div>
-                <div class="icon_btmlft2">
-                  <a href=""><i class="fa-solid fa-shirt"></i></a>
+                <div class="icon_btmlft2" id="second">
+                  <div class="chatbox-icon">nps</div>
                 </div>
               </div>
               <div class="border rounded-2 rounded-start" id="textbox">
@@ -179,25 +216,25 @@
                     <p class="m-0 info-title">Skills</p>
                     <div class="row m-0 info-item m-1">
                       <i class="fa-solid fa-face-smile skill-icon"></i>
-                      <div class="col progress">
+                      <div class="progress">
                         <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
                     </div>
                     <div class="row m-0 info-item m-1">
                       <div class="xp-circle">xp</div>
-                      <div class="col progress">
+                      <div class="progress">
                         <div class="progress-bar border-1 border-" role="progressbar" style="width: 85%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
                     </div>
                     <div class="row m-0 info-item m-1">
-                      <i class="fa-solid fa-bolt-lightning"></i>
-                      <div class="col progress">
+                      <i class="fa-solid fa-bolt-lightning skill-icon"></i>
+                      <div class="progress">
                         <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
                     </div>
                     <div class="row m-0 info-item m-1">
-                      <i class="fas fa-arrow-circle-right"></i>
-                      <div class="col progress">
+                      <i class="fas fa-arrow-circle-right skill-icon"></i>
+                      <div class="progress">
                         <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
                     </div>
