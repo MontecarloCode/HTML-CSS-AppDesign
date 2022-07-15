@@ -325,7 +325,8 @@ i:hover {
   text-align: left;
   margin: 0px;
   overflow-y: auto;
-  overflow-y: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .chat-line {
@@ -341,7 +342,7 @@ i:hover {
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
-
+  height: 10px;
 }
 
 /* Track */
@@ -372,6 +373,17 @@ i:hover {
   }
 }
 
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 12px
+  }
+
+  .overlay .closebtn {
+    font-size: 25px;
+    top: 5px;
+    right: 5px;
+  }
+}
 #gary-content hr {
   height: 1px;
   margin: 0 auto;
