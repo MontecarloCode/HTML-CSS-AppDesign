@@ -1,33 +1,14 @@
-// document.addEventListener("resize", changeLocation);
-
-// function changeLocation(element, prop) {
-//   // Get width and height of the window excluding scrollbars
-//   let ele = document.getElementById("main");
-//   let val = ele.offsetLeft;
-//   console.log(val);
-
-//   // Display result inside a div element
-//   ele.style.left = val + "px";
-// }
-// document.addEventListener("click", closeAllSidebar());
-
-// function closeAllSidebar() {
-//   console.log("click");
-//   let overlays = document.getElementsByClassName("overlay");
-//   for (let i = 0; i < overlays.length; i++) {
-//     overlays[i].style.width = "0%";
-//   }
-// }
-
 let show_actions = false;
 let show_sign = false;
+let show_chatStyles = false;
+
 function getPropValue(ele, prop) {
   let x = document.getElementById(ele)[prop];
   return x;
 }
 
 function openOverlay(id) {
-  closeActions();
+  closeDropDown("actions");
   let element = document.getElementById(id);
   let prop = "left";
   let start_point = "offsetLeft";
@@ -57,14 +38,19 @@ function toogle(id) {
   if (show_actions == false) show_sign == false;
   if (id == "actions") {
     show_actions = !show_actions;
+    if (show_actions == true) openActions();
+    else closeDropDown(id);
   }
   if (id == "sign") {
     show_sign = !show_sign;
+    if (show_sign == true) openSign();
+    else closeDropLeft(id);
   }
-  if (show_actions == true) openActions();
-  else closeActions(id);
-  if (show_sign == true) openSign();
-  else closeSign("sign");
+  if (id == "chat-styles") {
+    show_chatStyles = !show_chatStyles;
+    if (show_chatStyles == true) openChatStyles();
+    else closeDropDown(id);
+  }
 }
 
 function openActions() {
@@ -83,10 +69,9 @@ function openActions() {
   element.style.height = h;
 }
 
-function closeActions() {
-  closeSign("sign");
-  show_sign = false;
-  document.getElementById("actions").style.height = 0;
+function closeDropDown(id) {
+  closeDropLeft("sign");
+  document.getElementById(id).style.height = 0;
 }
 
 function openSign() {
@@ -104,7 +89,7 @@ function openSign() {
   element.style.width = "60px";
 }
 
-function closeSign() {
-  show_sign = false;
-  document.getElementById("sign").style.display = "none";
+function closeDropLeft(id) {
+  if (id == "sign") show_sign = false;
+  document.getElementById(id).style.display = "none";
 }
