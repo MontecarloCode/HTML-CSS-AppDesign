@@ -28,8 +28,8 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="container-fluid bg-secondary" id="container">
-      <div class="row d-flex justify-content-between mx-5" id="main">
+    <div class="container-fluid bg-secondary px-5" id="container">
+      <div class="row d-flex justify-content-between m-0" id="main">
         <div class="col d-flex align-items-start flex-column p-0" id="left">
           <!-- DudeLoolsLikeALady Overlay Start-->   
           <div id="setting" class="overlay">
@@ -190,7 +190,7 @@
                   </i>
                 </a>
               </div>
-              <div class="icon_btmlft1" onclick="openOverlay('setting')">
+              <div class="icon_btmlft1" onclick="openOverlay('thanks')">
                 <a href="javascript:void(0)"><img src="./img/PWR02.gif" alt="habbo" /></a>
               </div>
               <div class="icon_btmlft" onclick="openOverlay('setting')">
@@ -251,8 +251,39 @@
                   </div>
                   <span class="col text-start">CHAT STYLES</span>
                 </div>
-                <div class="chat-styles-content">
-                  
+                <div class="row d-flex justify-content-center chat-styles-content">
+                  <div class="col px-4 chat-style-parent">
+                    <div class="p-0 d-flex chat-style">
+                      <img class="m-0 p-0 border-0" src="./img/bubble_0_1.png">
+                      <div class="m-0 chat-style-text" id="chat-style-1">The quick brown fox jumps over the lazy dog</div>
+                      <img class="m-0 p-0 border-0" src="./img/bubble_0_3.png">
+                    </div>
+                    <div class="p-0 d-flex chat-style">
+                      <img class="m-0 p-0 border-0" src="./img/bubble_12_1.png">
+                      <div class="m-0 chat-style-text" id="chat-style-2">The quick brown fox jumps over the lazy dog</div>
+                      <img class="m-0 p-0 border-0" src="./img/bubble_12_3.png">
+                    </div>
+                    <div class="p-0 d-flex chat-style">
+                      <img class="m-0 p-0 border-0" src="./img/bubble_11_1.png">
+                      <div class="m-0 chat-style-text" id="chat-style-3">The quick brown fox jumps over the lazy dog</div>
+                      <img class="m-0 p-0 border-0" src="./img/bubble_11_3.png">
+                    </div>
+                    <div class="p-0 d-flex chat-style">
+                      <img class="m-0 p-0 border-0" src="./img/bubble_7_1.png">
+                      <div class="m-0 chat-style-text" id="chat-style-4">The quick brown fox jumps over the lazy dog</div>
+                      <img class="m-0 p-0 border-0" src="./img/bubble_7_3.png">
+                    </div>
+                    <div class="p-0 d-flex chat-style">
+                      <img class="m-0 p-0 border-0" src="./img/bubble_9_1.png">
+                      <div class="m-0 chat-style-text" id="chat-style-5">The quick brown fox jumps over the lazy dog</div>
+                      <img class="m-0 p-0 border-0" src="./img/bubble_9_3.png">
+                    </div>
+                    <div class="p-0 d-flex chat-style">
+                      <img class="m-0 p-0 border-0" src="./img/bubble_25_1.png">
+                      <div class="m-0 chat-style-text" id="chat-style-6">The quick brown fox jumps over the lazy dog</div>
+                      <img class="m-0 p-0 border-0" src="./img/bubble_25_3.png">
+                    </div>
+                  </div>
                 </div>
               </div>
               <!-- Chat Styles Overlay End-->  
@@ -272,7 +303,7 @@
           </div>
         </div>
         <div
-          class="col-4 d-flex align-items-end justify-content-end pb-2"
+          class="col-4 d-flex align-items-end justify-content-end pb-2 p-0"
           id="right"
         >
           <!-- Gary the GlueStick Overlay Start-->   
@@ -339,9 +370,26 @@
             </div>
           </div>
           <!-- Gary the GlueStick Overlay End-->
-          <div class="d-flex flex-row-reverse" id="questin_sec">
-            <div class="icon_shping ps-3">
-              <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
+          <!-- thanks overlay start -->
+          <div id="thanks" class="overlay d-flex justify-content-space">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay('thanks')">&times;</a>
+            <div class="overlay-content" id="thanks-content">
+              <p class="text-center m-0"><i class="fa fa-exclamation-triangle fs-6"></i></p>
+              <p class="px-2 fs-5 m-0 text-center" id="thanks-title">Thanks for your call</p><hr class="m-1" />
+              <div class="p-2">
+                <p class="px-2 m-0" >A member of our Community Staff will investigate the situation and take appropriate action.</p>
+                <br />
+                <p class="px-2 m-0">
+                  Please check <span  id="faq-link">Service Updates on the FAQs</span> &nbsp;for known technical problem
+                </p>
+                <p class="px-2 m-0 text-center text-success fs-5"><i class="fa-solid fa-circle-check"></i></p>
+              </div>
+            </div>
+          </div>
+          <!-- thanks overlay end -->
+          <div class="d-flex flex-row-reverse px-2" id="questin_sec">
+            <div class="icon_shping ps-3" onclick="openOverlay('thanks')">
+              <a href="javascript:void(0)"><i class="fa-solid fa-right-from-bracket"></i></a>
             </div>
             <div class="icon_shping">
               <a href="javascript:void(0)" onclick="openOverlay('gary')"><i class="fa fa-question"></i></a>

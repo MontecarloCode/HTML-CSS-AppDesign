@@ -10,23 +10,27 @@ function getPropValue(ele, prop) {
 function openOverlay(id) {
   closeDropDown("actions");
   let element = document.getElementById(id);
-  let prop = "left";
+  // let prop = "left";
   let start_point = "offsetLeft";
   let w = "25%";
 
   if (id === "gary") {
-    prop = "right";
+    // prop = "right";
     w = "20%";
   }
   if (id === "actions") {
-    prop = "bottom";
+    // prop = "bottom";
     start_point = "offsetTop";
     w = "50px";
     h = "40vh";
   }
+  if (id === "thanks") {
+    // prop = "bottom";
+    w = document.getElementById("main").offsetWidth + "px";
+  }
   start_location = getPropValue("main", start_point);
 
-  element.style[prop] = start_location + "px";
+  // element.style[prop] = start_location + "px";
   element.style.width = w;
 }
 
@@ -114,3 +118,5 @@ function openChatStyles(element) {
   console.log(element.offsetWidth);
   ele.style.width = element.offsetWidth + "px";
 }
+
+function openThanks() {}
