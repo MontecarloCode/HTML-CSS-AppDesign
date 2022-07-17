@@ -139,10 +139,9 @@
                 <a href="javascript:void(0)"><i class="fa-solid fa-user-group"></i></a>
               </div>
               <!-- Actions Overlay Start-->
-              <!-- <div id="actions"> -->
               <div id="actions" class="actions-overlay">
-                <div class="" id="hand-top">
-                  <a onclick="toogle('actions')"><i class="fa-solid fa-hand"></i></a>
+                <div class="" id="hand-top" onclick="toogle('actions')">
+                  <a><i class="fa-solid fa-hand"></i></a>
                 </div>
                 <div id="actions-main" class="" >
                   <div class="overlay-title" id="actions-title">ACTIONS</div>
@@ -239,25 +238,25 @@
             <img src="./img/icon1.png" alt="Main Image" />
           </div>
           <div class="row" id="center-bottom">
-              <!-- Actions Overlay Start-->
+              <!-- Chat Styles Overlay Start-->
               <div id="chat-styles" class="actions-overlay">
-                <div class="" id="hand-top">
-                  <a onclick="toogle('chat-styles')"><i class="fa-solid fa-hand"></i></a>
-                </div>
-                <div id="chat-styles-main" class="" >
-                  <div class="overlay-title" id="chat-styles-title">ACTIONS</div>
-                  <div class="chat-styles-content">
-                    <p><a href="javascript:void(0)">Idle</a></p>
-                    <p><a href="javascript:void(0)">Wave</a></p>
-                    <p><a href="javascript:void(0)">Laugh</a></p>
-                    <p><a href="javascript:void(0)">Sit</a></p>
-                    <p><a href="javascript:void(0)">Respect</a></p>
-                    <p><a href="javascript:void(0)">Blow Kiss</a></p>
+                <div class="row overlay-title" id="chat-styles-title">
+                  <div class="col col-1 p-0">
+                    <img class="chat-styles-icon" id="doner-menu" src="./img/doner-menu.PNG">
                   </div>
+                  <div class="col col-3 p-0">
+                    <img class="chat-styles-icon" id="hk-icon" src="./img/hc.png">
+                    <img class="chat-styles-icon" id="active-icon" src="./img/icon_193.png">
+                    <img class="chat-styles-icon" id="unknown-icon" src="./img/icon_action.5f8efe18f184f902f522.png">
+                  </div>
+                  <span class="col text-start">CHAT STYLES</span>
+                </div>
+                <div class="chat-styles-content">
+                  
                 </div>
               </div>
-              <!-- Actions Overlay End-->  
-            <div class="d-flex center-bottom" id="chatbox">
+              <!-- Chat Styles Overlay End-->  
+            <div class="d-flex center-bottom" id="chatbox" data-slave="chat-styles" onclick="toogleChatStyles(this)">
               <div class="d-flex" id="icon_sec">
                 <div class="icon_btmlft2" id="first">
                   <div class="chatbox-icon">nps</div>
@@ -266,7 +265,7 @@
                   <div class="chatbox-icon">nps</div>
                 </div>
               </div>
-              <div class="border rounded-2 rounded-start" id="textbox" onclick="toogle('chat-styles')">
+              <div class="border rounded-2 rounded-start" id="textbox">
                 You're a wizard Harry
               </div>
             </div>

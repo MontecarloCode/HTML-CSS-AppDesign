@@ -744,3 +744,24 @@
 .content-title {
   font-weight: 900;
 }
+#chat-styles {
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 7px;
+  width: 28vw;
+  position: absolute;
+  bottom: 25px;
+}
+
+#chat-styles-title {
+  color: white;
+  font-size: 10px !important;
+  height: 25px;
+}
+
+.chat-styles-icon {
+  height: 10px;
+}
+
+#doner-menu {
+  border-radius: 50%;
+}
